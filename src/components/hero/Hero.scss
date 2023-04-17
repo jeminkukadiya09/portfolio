@@ -79,6 +79,11 @@ $extra-small: 460px;
               top: 4.7rem;
               width: 3.5rem;
             }
+            @media screen and (max-width: $extra-small) {
+              right: 1rem;
+              top: 4.7rem;
+              width: 3.1rem;
+            }
           }
 
           span {

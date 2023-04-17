@@ -34,12 +34,7 @@ $mobile: 425px;
                     right: 245px;
                 }
                 @media screen and (max-width: $teblate) {
-                    right: 130px;
-                }
-                @media screen and (max-width: $mobile) {
-                    right: 63px;
-                    width: 40px;
-                    bottom: 43px;
+                    display: none;
                 }
             }
 
@@ -49,6 +44,8 @@ $mobile: 425px;
                 width: 410px;
                 @media screen and (max-width: $medium) {
                    margin-bottom: 35px;
+                   height: auto;
+                   width:90%;
                   }
             }
 
@@ -67,12 +64,7 @@ $mobile: 425px;
                     right: 190px;
                   }
                   @media screen and (max-width: $teblate) {
-                    right: 75px;
-                }
-                @media screen and (max-width: $mobile) {
-                    right: 25px;
-                    width: 120px;
-                    height: 120px;
+                    display: none;
                 }
 
                 img {
@@ -123,7 +115,11 @@ $mobile: 425px;
                 color: #767676;
                 font-size: 17px;
                 line-height: 1.5;
+                font-weight: 500;
             }
+            @media screen and (max-width: $mobile) {
+                font-size: 15px;
+              }
         }
 
     }
