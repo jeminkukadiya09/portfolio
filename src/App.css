@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1070px;
+  padding: 0 40px;
+}
+
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+  /* -moz-osx-font-smoothing: grayscale; */
+  -webkit-font-smoothing: antialiased;
+  /* display: var(--fa-display,inline-block); */
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 20px;
+}

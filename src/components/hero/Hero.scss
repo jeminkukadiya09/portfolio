@@ -1,0 +1,206 @@
+$small: 900px;
+$medium: 1020px;
+$extra-small: 460px;
+
+.hero {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  @media screen and (max-width: $small) {
+    height: auto;
+    padding: 110px 0;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 0 40px;
+    @media screen and (max-width: $extra-small) {
+      height: auto;
+      padding: 0 17px;
+    }
+
+    .content {
+      align-items: center;
+      display: flex;
+      gap: 10rem;
+      height: 44rem;
+      justify-content: center;
+      position: relative;
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+        text-align: center;
+      }
+
+      .hero-main {
+        align-items: center;
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+        position: relative;
+        @media screen and (max-width: $small) {
+          flex-direction: column-reverse;
+          gap: 30px;
+          height: auto;
+          text-align: center;
+        }
+
+        .hero-text {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          max-width: 500px;
+
+          h1 {
+            color: #2d2e32;
+            font-size: 55px;
+            line-height: 1.2;
+            margin: 2rem 0;
+            @media screen and (max-width: 600px) {
+              font-size: 40px;
+            }
+          }
+
+          img {
+            position: absolute;
+            right: 8rem;
+            top: 6rem;
+            width: 4rem;
+            @media screen and (max-width: $small) {
+              right: 3rem;
+            }
+            @media screen and (max-width: 500px) {
+              right: 2rem;
+              top: 4.7rem;
+              width: 3.5rem;
+            }
+          }
+
+          span {
+            cursor: pointer;
+            display: flex;
+            gap: 1.3rem;
+            margin: 2.5rem 0;
+            @media screen and (max-width: $small) {
+              gap: 1.6rem;
+              justify-content: center;
+              margin: 2rem 0;
+            }
+
+            :hover {
+              color: #702cf6;
+            }
+          }
+
+          p {
+            color: #767676;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 1.6;
+          }
+
+          svg {
+            color: #2d2e32;
+            transition: all 0.2s;
+          }
+        }
+
+        .hero-img {
+          -webkit-animation: morph 8s ease-in-out infinite;
+          animation: morph 8s ease-in-out infinite;
+          background-image: url("../../assets/profile.jpg");
+          background-position: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: 3px solid #2d2e32;
+          border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          height: 22rem;
+          position: relative;
+          transition: all 1s ease-in-out;
+          width: 22rem;
+
+          @media screen and (max-width: 600px) {
+            height: 17rem;
+            width: 17rem;
+          }
+        }
+
+        @keyframes morph {
+          0% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          }
+
+          50% {
+            border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+          }
+
+          100% {
+            border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+          }
+        }
+      }
+    }
+    .skill {
+      align-items: center;
+      bottom: 0;
+      color: #767676;
+      display: flex;
+      font-size: 17px;
+      left: 0;
+      position: absolute;
+      @media screen and (max-width: $small) {
+        flex-direction: column;
+        position: static;
+      }
+      p {
+        border-right: 2px solid rgba(45, 46, 50, 0.5);
+        color: #2d2e32;
+        font-weight: 600;
+        margin-right: 70px;
+        padding-right: 20px;
+        @media screen and (max-width: $small) {
+          border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+          border-right: none;
+          margin-bottom: 3rem;
+          margin-right: 0;
+          padding-bottom: 1rem;
+          padding-right: 0;
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        list-style: none;
+        @media screen and (max-width: $small) {
+          justify-content: center;
+        }
+
+        li {
+          align-items: center;
+          background-color: #fff;
+          border-radius: 50%;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+          cursor: pointer;
+          display: flex;
+          height: 65px;
+          justify-content: center;
+          width: 65px;
+
+          img {
+            height: auto;
+            width: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// for dark hover: #c3a9ff
